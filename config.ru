@@ -8,6 +8,6 @@ Sinatra::Application.default_options.merge!(
 )
  
 require 'app'
-map "/uk-company-chatter" do
+map "/uk-parliament-chatter" do
   run Sinatra.application
 end
