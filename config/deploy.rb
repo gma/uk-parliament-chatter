@@ -1,5 +1,6 @@
 set :application, "uk-parliament-chatter"
 set :repository, "git://github.com/gma/#{application}.git"
 # set :revision, "origin/master"
-set :domain, "fig.effectif.com"
+set :user, "app"
+set :domain, "#{user}@fig.effectif.com"
 set :deploy_to, "/var/apps/#{application}"
