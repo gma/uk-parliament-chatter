@@ -30,7 +30,7 @@ get "" do
 end
 
 get "/minister" do
-  content_type :js, :charset => "utf-8"
+  content_type :js, :charset => "utf-8" unless params[:debug]
   query = TwfyFinder.new("--min-words 2 --max-words 7")
   query.find(params[:q])
 end
